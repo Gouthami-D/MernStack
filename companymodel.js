@@ -1,0 +1,65 @@
+const mongoose= require('mongoose')
+const CompanySchema= new mongoose.Schema({
+    companyname:{
+        type:String,
+        required:true
+    },
+    streetaddress:{
+        type:String,
+        required:true
+    },
+    city:{
+        type:String,
+        required:true
+    },
+    state:{
+        type:String,
+        required:true
+    },
+    zipcode:{
+        type:Number,
+        required:true
+    },
+    website:{
+        type:String,
+        required:true
+    },
+    phone:{
+        type:Number,
+        required:true
+    },
+    sectorofexpertise:{
+        type:String,
+        required:true
+    },
+    companysummary:{
+        type:String,
+        required:true
+    },
+    linkedin:{
+        type:String,
+        required:true
+    },
+    facebook:{
+        type:String,
+        required:true
+    },
+    branch:{
+        type:String,
+        required:true
+    },
+    accountmanager:{
+        type:String,
+        required:true
+    },
+    recruiter:{
+        type:String,
+        required:true
+    },
+    competitor:{
+        type:String,
+        required:true
+    },
+})
+
+module.exports = mongoose.model('Company Schema',CompanySchema)
